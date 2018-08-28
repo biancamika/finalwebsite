@@ -11,7 +11,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -22,7 +22,28 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <div id="windowHome" class="wrapper window">
+    <div id="windowBar">
+      <span class="windowTitle">under construction</span>
+      <div id="windowBarIcons">
+        <i class="fas fa-window-minimize"></i>
+        <i class="fas fa-window-restore"></i>
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div id="windowContent">
+      Hello
+    </div>
+  </div>
+
+  <div id="icons" class="wrapper">
+    <button id="home">Home</button>
+    <button id="about">About</button>
+    <button id="portfolio">Portfolio</button>
+    <button id="aeap">AEAP</button>
+    <button id="blog">Blog</button>
+    <button id="contact">Contact</button>
+  </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

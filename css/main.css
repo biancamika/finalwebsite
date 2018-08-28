@@ -96,6 +96,61 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+    padding: 40px 40px 40px 40px; /*for mobile*/
+    font-family:'Merriweather',serif;
+    background: url("../img/background.gif");
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+/*for desktop*/
+@media only screen and (min-width:768px) {
+    body {
+        padding: 40px 100px 40px 100px; 
+    }
+}
+
+.wrapper {
+    display: grid;
+}
+
+.window {
+    height: 550px;
+    grid-template-rows: 6% 94%;
+    grid-template-columns: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+#windowBar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color:#ECB39F;
+    padding: 5px 5px 5px 5px;
+}
+
+#windowBarIcons {
+    display:inline;
+}
+
+.windowTitle {
+    display:inline;
+}
+
+#windowContent {
+    background-color:#FFF8EF;
+}
+
+#icons {
+    grid-template-rows: 100%;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+}
 
 
 
