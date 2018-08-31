@@ -4,52 +4,174 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>biancamika</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </head>
-
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
   <!-- Add your site or application content here -->
-  <div id="windowHome" class="wrapper window">
-    <div id="windowBar">
-      <span class="windowTitle">under construction</span>
-      <div id="windowBarIcons">
-        <i class="fas fa-window-minimize"></i>
-        <i class="fas fa-window-restore"></i>
-        <i class="fas fa-times"></i>
-      </div>
-    </div>
-    <div id="windowContent">
-      Hello
-    </div>
-  </div>
-
   <div id="icons" class="wrapper">
-    <button id="home">Home</button>
-    <button id="about">About</button>
-    <button id="portfolio">Portfolio</button>
-    <button id="aeap">AEAP</button>
-    <button id="blog">Blog</button>
-    <button id="contact">Contact</button>
+        <a data-menuanchor="slide1" href="#page1/slide1">Home</a>
+        <a data-menuanchor="slide2" href="#page1/slide2">About</a>
+        <a data-menuanchor="slide3" href="#page1/slide3">Portfolio</a>
+        <a data-menuanchor="slide4" href="#page1/slide4">AEAP</a>
+        <a data-menuanchor="slide5" href="#page1/slide5">Blog</a>
+        <a data-menuanchor="slide6" href="#page1/slide6">Contact</a>
+  </div>
+  <div id="fullpage" class="fullpage-wrapper">
+    <div class="section" data-anchor="page1">
+        <div class="slide" data-anchor="slide1">
+            <div id="windowHome" class="wrapper window">
+                <div class="windowBar">
+                    <span class="windowTitle">under construction</span>
+                    <div class="windowBarIcons">
+                        <i class="fas fa-window-minimize"></i>
+                        <i class="fas fa-window-restore"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="windowContent">
+                Hello
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-anchor="slide2">
+            <div id="windowAbout" class="wrapper window">
+                <div class="windowBar">
+                    <span class="windowTitle">about</span>
+                    <div class="windowBarIcons">
+                        <i class="fas fa-window-minimize"></i>
+                        <i class="fas fa-window-restore"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="windowContent">
+                    <div>
+                        <img src="img/me.png">
+                    </div>
+                    <div>
+                        <h1>Bianca Aguilar</h1>
+                        <p>Hello there! I am a Grade 12 student in the Arts & Design track of De la Salle Santiago Zobel. Passionate about the intersection of the arts and technology, I work tirelessly to create for my numerous advocacies, such as mental health and feminism. In the future, I aspire to become a UX/UI designer, hoping to make the arts accessible to all.</p>
+                        <div id="windowAboutLinks">
+                            <a href="http://fb.com/biancamikaa"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="http://twitter.com/biancamikaila"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="http://instagram.com/biancamikaila"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/biancamika/"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <a id="windowAboutResume" class="boxlink" href="resume.pdf"><i class="fas fa-file"></i>My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-anchor="slide3">
+            <div id="windowPortfolio" class="wrapper window">
+                <div class="windowBar">
+                    <span class="windowTitle">portfolio</span>
+                    <div class="windowBarIcons">
+                        <i class="fas fa-window-minimize"></i>
+                        <i class="fas fa-window-restore"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="windowContent">
+                    <div>
+                        <p> FILE EXPLORER </p>
+                        <ul>
+                            <li>Art</li>
+                            <li>Design</li>
+                            <li>Photography</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>hello</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-anchor="slide4">
+            <div id="windowAeap" class="wrapper window">
+                <div class="windowBar">
+                    <span class="windowTitle">apprenticeship and exploration in art production</span>
+                    <div class="windowBarIcons">
+                        <i class="fas fa-window-minimize"></i>
+                        <i class="fas fa-window-restore"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="windowContent">
+                    <div>
+                        <img src="img/aeap.gif">
+                    </div>
+                    <div>
+                        <h1>The Dance Diagnosis</h1>
+                        <p><a href='https://biancamika.github.io/thedancediagnosis/'>biancamika.github.io/thedancediagnosis/</a></p>
+                        <p><a href='https://drive.google.com/open?id=1NG7SPitKJwb09sHqt0sLl44wv8FWZJgD'>PROGRESS VIDEO LINK</a></p>
+                        <p>For the subject Apprenticeship and Exploration in Art Production, we were tasked to create an artwork related to our chosen profession. Due to my combined love of art, design, and technology, I decided to choose the field of digital product design. Because of this, the output I decided to make was a website coded from scratch.</p>
+                        <p>Unlike in art, where outputs can be created just for aesthetics, products must be designed in order to solve a certain problem. With thought, I was able to find the problem I wanted to solve in one of my passions: dance. As someone who always aspires to become better, I was struggling to practice on my own without a teacher. This lack of knowledge was made pronounced when I overexerted both of my hip flexors in the span of a few months (separate times). If I had known my limits, I could have avoided this injury. </p>
+                        <p>Because of this, I realized that there was a need for a tool to help dancers with body awareness. As a result, I conceptualized a website as a solution to this. This project of mine is named “The Dance Diagnosis”, and it is a website that helps contemporary dancers (e.g. ballet, jazz, modern) assess their weaknesses; they will then be given recommendations for fixing them.</p>
+                        <p>I decided to challenge myself by making the website a quiz, which I have never coded before. I thought I would be fine, having planned everything in advance (from framework to design). However, I underestimated the amount of effort it would take to build my initial design. The quiz was supposed to have logic branching, where the questions you get are tailored to your answers; for instance, if you said you preferred dogs over cats in question one, then the succeeding questions would only involve dogs. Even if it was a great idea, it was too complex for my current skill level. As a result, I had to change the model entirely. </p>
+                        <p>After searching for ideas, the one I chose to emulate was a Buzzfeed checklist quiz. This may have been more restricted, but it was also easier to code. Along with the format, I also had to change the information involved. The results of the quiz were supposed to be body weaknesses (e.g. your core is weak), but there were too much to cover. Searching again, I found the components of physical fitness easier to handle. These included muscular strength, muscular endurance, cardiovascular endurance and flexibility. I decided to exclude body fat composition from the components because I felt like it was too different from the others.</p>
+                        <p>When I finished the website, my work wasn’t over yet. From what I learned from my professional, I still had to test it with other people in order to validate the user interface. For this purpose, I chose my classmates from ballet. I made an evaluation in Google Forms asking the user to grade the website’s content, interface, etc; you may find the results of the survey in this link: <a href='http://bit.ly/DDEvaluationResults'>http://bit.ly/DDEvaluationResults</a>. The users unanimously agreed about it being both aesthetically pleasing and easy to use. However, they were divided regarding the need for more content (e.g. recommendations), with some being content with what was provided while others asked for more. There were also complaints regarding accessibility. For instance, one said that the text was hard to read because of the background. Another also said that there were issues with the user interface on a mobile device. Overall, they all found the website’s concept cool, believing it would be useful for dancers.</p>
+                        <p>In this project, I realized the value of prototyping. In a user design workshop I attended before, the instructor emphasized the importance of low-fidelity prototyping, which is when sketches of the product are done with pencil and paper. What I learned can be summed up in one statement: “Fall in love with the problem, not the solution”. There should be multiple sketches done in order to be able to choose the most appropriate design. If one sticks to polishing only one design, making the necessary changes will be harder. I learned this the hard way when I thought the initial design I made was good enough already. In the end, I wasted time on researching how to implement a difficult design and had to redo everything.</p>
+                        <p>This can also be applied to real life; one example would be advising friends. You may already have a go-to approach, whether it’s simply listening or using humour. However, different problems and personalities call for different solutions. For instance, joking may not always help someone who wants to be serious. In this case, simply listening would be the better option. The main lesson to learn from product design is empathy. Unlike in art, where people create for aesthetic purposes, design must have both form and functionality. As a result, the designer must center his/her thinking around the user. After all, there’s no point in designing a product if no one is going to use it. Overall, I am grateful for having the opportunity to pursue my passion for a project; the lessons I learned from the experience will definitely stay with me for a long time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" data-anchor="slide5">
+                <div id="windowBlog" class="wrapper window">
+                    <div class="windowBar">
+                        <span class="windowTitle">blog</span>
+                        <div class="windowBarIcons">
+                            <i class="fas fa-window-minimize"></i>
+                            <i class="fas fa-window-restore"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                    <div class="windowContent">
+                    <h2>Suffocating Symbolism</h2>
+                    <p>Evaristti's "Helena & El Pescador" proves a point, but at what cost?</p>
+                    </div>
+                </div>
+        </div>
+        <div class="slide" data-anchor="slide6">
+            <div id="windowContact" class="wrapper window">
+                <div class="windowBar">
+                    <span class="windowTitle">contact</span>
+                    <div class="windowBarIcons">
+                        <i class="fas fa-window-minimize"></i>
+                        <i class="fas fa-window-restore"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+                <div class="windowContent">
+                deets
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+  <script type="text/javascript" src="js/vendor/scrolloverflow.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.min.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

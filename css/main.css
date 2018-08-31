@@ -97,8 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body {
-    padding: 40px 40px 40px 40px; /*for mobile*/
     font-family:'Merriweather',serif;
+    color: #614a3b;
     background: url("../img/background.gif");
     background-position:center;
     background-attachment:fixed;
@@ -109,48 +109,196 @@ body {
     background-size:cover;
 }
 
-/*for desktop*/
-@media only screen and (min-width:768px) {
-    body {
-        padding: 40px 100px 40px 100px; 
-    }
+#fullpage {
+    padding: 0px 40px 40px 40px;
 }
 
-.wrapper {
+.wrapper, .windowContent {
     display: grid;
 }
 
 .window {
-    height: 550px;
+    height: 80%;
+    max-height: 550px;
     grid-template-rows: 6% 94%;
-    grid-template-columns: 100%;
+    grid-template-columns: 100%; /*for mobile*/
     margin: 0 auto;
-    padding-bottom: 30px;
 }
 
-#windowBar {
+/*window parts*/
+
+.windowBar {
     grid-column-start: 1;
     grid-column-end: 2;
     background-color:#ECB39F;
-    padding: 5px 5px 5px 5px;
+    padding: 5px 10px 5px 10px;
+    color: #fff8ef;
 }
 
-#windowBarIcons {
+.windowBarIcons {
     display:inline;
+    float:right;
 }
 
 .windowTitle {
     display:inline;
 }
 
-#windowContent {
+.windowContent {
     background-color:#FFF8EF;
 }
 
+.windowContent p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* types of windows*/
+
+/* ABOUT */
+#windowAbout .windowContent {
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#windowAbout img {
+    height:150%;
+    position:relative;
+    bottom:120px;
+}
+
+#windowAbout h1 {
+    font-size: 400%;
+    padding-bottom:0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#windowAbout p {
+    margin: 0px 0px 0px 0px;
+    padding-top:0px;
+    font-size: 110%;
+}
+
+#windowAboutLinks {
+    margin: 0 auto;
+    text-align:center;
+    padding: 20px 0px 20px 0px;
+}
+
+#windowAboutLinks a {
+    color: #614a3b;
+    font-size: 130%;
+    padding-right: 15px;
+}
+
+#windowAboutLinks a:hover {
+    color: #ECB39F;
+}
+
+#windowAboutResume {
+    display:block;
+    text-align:center;
+    background-color:#614a3b;
+    color:#fff8ef;
+    max-width: 200px;
+    text-decoration:none;
+    padding: 10px 10px 10px 10px;
+    font-size: 160%;
+    position:relative;
+    left: 150px;
+}
+
+#windowAboutResume:hover {
+    background-color:#ECB39F;
+}
+
+#windowAboutResume i {
+    padding-right:15px;
+}
+
+#windowAbout .windowContent div:nth-child(1) {
+    overflow:hidden;
+}
+
+#windowAbout .windowContent div:nth-child(2) {
+    padding: 20px 20px 20px 20px;
+}
+
+
+/*PORTFOLIO*/
+#windowPortfolio .windowContent {
+    /*adjust for mobile*/
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+}
+
+#windowPortfolio .windowContent div:nth-child(1) {
+    background-color: #ccc;
+    padding: 10px 10px 10px 10px;
+}
+
+#windowPortfolio .windowContent div:nth-child(2) {
+    background-color: #fff8ef;
+    padding: 10px 10px 10px 10px;
+}
+
+/*AEAP*/
+
+#windowAeap .windowContent {
+    /*adjust for mobile */
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+#windowAeap .windowContent div {
+    padding: 10px 30px 10px 30px;
+}
+
+#windowAeap img {
+    height:100%;
+    position:relative;
+}
+
+#windowAeap .windowContent div:nth-child(1) {
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+#windowAeap .windowContent div:nth-child(2) {
+    background-color: #fff8ef;
+    overflow:scroll;
+}
+
+/*BLOG */
+
+/*CONTACT */
+
+/*for desktop icons */
 #icons {
+    position:fixed;
+    bottom:0;
+    z-index:2;
+    padding: 40px 40px 0px 40px;
+    width:100%;
     grid-template-rows: 100%;
     grid-template-columns: 16% 16% 16% 16% 16% 16%;
 }
+
+@media only screen and (min-width: 768px){
+    /*for desktop*/
+    .window {
+        position:relative;
+        bottom: 20px;
+        width: 80%;
+        height:80%;
+    }
+    /*window types*/
+    /*icons*/
+    #icons {
+        bottom: 20px;
+    }
+} 
+
+
 
 
 
