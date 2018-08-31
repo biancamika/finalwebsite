@@ -148,7 +148,7 @@ body {
     background-color:#FFF8EF;
 }
 
-.windowContent p {
+.windowContent p, li {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -175,7 +175,7 @@ body {
 #windowAbout p {
     margin: 0px 0px 0px 0px;
     padding-top:0px;
-    font-size: 110%;
+    font-size: 120%;
 }
 
 #windowAboutLinks {
@@ -232,7 +232,7 @@ body {
 }
 
 #windowPortfolio .windowContent div:nth-child(1) {
-    background-color: #ccc;
+    background-color: #e8ded7;
     padding: 10px 10px 10px 10px;
 }
 
@@ -269,6 +269,48 @@ body {
 }
 
 /*BLOG */
+
+#windowBlog .windowContent {
+    grid-template-rows: 100%;
+    grid-template-columns: 20% 80%;
+}
+
+#windowBlog .windowContent div:nth-child(1) {
+    background-color: #e8ded7;
+    padding: 10px 10px 10px 10px;
+}
+
+#windowBlog .windowContent div:nth-child(2) {
+    padding: 10px 10px 10px 10px;
+    overflow:scroll;
+}
+
+.windowBlogPost:nth-child(1), #windowBlogHome {
+    background-color: #FFF8EF !important;
+}
+
+.windowBlogPost h2{
+    font-size: 180%;
+    margin: 0px 0px 0px 0px;
+}
+
+.windowBlogPost p {
+    margin: 0px 0px 0px 0px;
+}
+
+.windowBlogPost a {
+    color:#614a3b;
+    text-decoration:none;
+}
+
+.windowBlogPost a:hover {
+    color:#ECB39F;
+}
+
+#windowBlogPost1 {
+    display:none;
+    overflow:auto !important;
+}
 
 /*CONTACT */
 

@@ -12,5 +12,5 @@ $(document).ready(function(){
       });
     };
     fullPageInit();
-
+    //showing stuff
 });
