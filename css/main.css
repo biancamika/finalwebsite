@@ -280,9 +280,22 @@ body {
     padding: 10px 10px 10px 10px;
 }
 
+#windowBlog .windowContent div:nth-child(1) a {
+    cursor:pointer;
+}
+
 #windowBlog .windowContent div:nth-child(2) {
     padding: 10px 10px 10px 10px;
     overflow:scroll;
+}
+
+
+#windowBlog .windowContent div:nth-child(2) div:nth-child(2) {
+    overflow:auto !important;
+}
+
+.windowBlogPost {
+    padding: 0px 0px 20px 0px !important;
 }
 
 .windowBlogPost:nth-child(1), #windowBlogHome {
@@ -301,18 +314,25 @@ body {
 .windowBlogPost a {
     color:#614a3b;
     text-decoration:none;
+    cursor:pointer;
 }
 
 .windowBlogPost a:hover {
     color:#ECB39F;
 }
 
-#windowBlogPost1 {
+#windowBlogPost1, #windowBlogPost2, #windowBlogPost3 {
     display:none;
-    overflow:auto !important;
+    /*overflow:auto !important;*/
+    background-color: #FFF8EF !important;
 }
 
 /*CONTACT */
+
+#windowContact .windowContent {
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+}
 
 /*for desktop icons */
 #icons {
