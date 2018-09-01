@@ -19,26 +19,38 @@ $(document).ready(function(){
       $("#windowBlogPost2").addClass("hidden");
       $("#windowBlogPost3").addClass("hidden");
       $("#windowBlogPost4").addClass("hidden");
-      $("#windowBlogHome").removeClass("hidden")
+      $("#windowBlogHome").removeClass("hidden");
   });
 
     $(".windowBlogLink1").click(function(){
-      $("#windowBlogPost1").removeClass("hidden")
+      $("#windowBlogPost1").removeClass("hidden");
+      $("#windowBlogPost2").addClass("hidden");
+      $("#windowBlogPost3").addClass("hidden");
+      $("#windowBlogPost4").addClass("hidden");
       $("#windowBlogHome").addClass("hidden");
   });
 
     $(".windowBlogLink2").click(function(){
-      $("#windowBlogPost2").removeClass("hidden")
+      $("#windowBlogPost2").removeClass("hidden");
+      $("#windowBlogPost1").addClass("hidden");
+      $("#windowBlogPost3").addClass("hidden");
+      $("#windowBlogPost4").addClass("hidden");
       $("#windowBlogHome").addClass("hidden");
   });
 
     $(".windowBlogLink3").click(function(){
      $("#windowBlogPost3").removeClass('hidden');
+     $("#windowBlogPost2").addClass("hidden");
+     $("#windowBlogPost1").addClass("hidden");
+     $("#windowBlogPost4").addClass("hidden");
      $("#windowBlogHome").addClass('hidden');
     });
 
     $(".windowBlogLink4").click(function(){
       $("#windowBlogPost4").removeClass('hidden');
+      $("#windowBlogPost2").addClass("hidden");
+      $("#windowBlogPost3").addClass("hidden");
+      $("#windowBlogPost1").addClass("hidden");
       $("#windowBlogHome").addClass('hidden');
     });
 
@@ -46,22 +58,18 @@ $(document).ready(function(){
     $("#windowPortfolioHomeLink").click(function(){
       $("#windowPortfolioArt").addClass("hidden");
       $("#windowPortfolioDesign").addClass("hidden");
-      $("#windowPortfolioPhotography").addClass("hidden");
-      $("#windowPortfolioHome").removeClass("hidden")
+      $("#windowPortfolioHome").removeClass("hidden");
   });
     
     $(".windowPortfolioLink1").click(function(){
       $("#windowPortfolioArt").removeClass('hidden');
+      $("#windowPortfolioDesign").addClass('hidden');
       $("#windowPortfolioHome").addClass('hidden');
     });
 
     $(".windowPortfolioLink2").click(function(){
       $("#windowPortfolioDesign").removeClass('hidden');
-      $("#windowPortfolioHome").addClass('hidden');
-    });
-
-    $(".windowPortfolioLink3").click(function(){
-      $("#windowPortfolioPhotography").removeClass('hidden');
+      $("#windowPortfolioArt").addClass('hidden');
       $("#windowPortfolioHome").addClass('hidden');
     });
 
