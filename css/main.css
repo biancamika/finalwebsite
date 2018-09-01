@@ -124,7 +124,7 @@ body {
     grid-template-columns: 100%; /*for mobile*/
     margin: 0 auto;
     position:relative;
-    top:-50px;
+    top:-60px;
 }
 
 /*window parts*/
@@ -252,6 +252,48 @@ body {
     padding: 10px 10px 10px 10px;
 }
 
+.windowPortfolioTags h2 {
+    font-size: 210%;
+    margin: 0px 0px 0px 0px;
+}
+
+#windowPortfolio .windowContent div:nth-child(2) span {
+    font-family:'Montserrat', sans-serif;
+}
+
+.windowPortfolioLink1 span {
+    padding-right:180px;
+}
+
+#windowPortfolio .windowContent div:nth-child(2) a {
+    display:block;
+    font-size:130%;
+}
+
+#windowPortfolio .windowContent div:nth-child(2) a i {
+    margin-right:10px;
+}
+
+
+
+#windowPortfolio .windowContent div:nth-child(2) div:nth-child(1) {
+    background-color: #fff8ef;
+    padding: 0px 0px 0px 0px;
+}
+
+#windowPortfolio .windowContent div:nth-child(2) div:nth-child(2) {
+    padding: 0px 0px 0px 0px;
+}
+
+.windowPortfolioTags {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-bottom:10px;
+}
+
+
+
 /*AEAP*/
 
 #windowAeap .windowContent {
@@ -262,6 +304,14 @@ body {
 
 #windowAeap .windowContent div {
     padding: 10px 30px 10px 30px;
+}
+
+#windowAeap .windowContent a {
+    color:#614a3b
+}
+
+#windowAeap .windowContent a:visited {
+    color:#614a3b
 }
 
 #windowAeap img {
@@ -352,11 +402,32 @@ body {
 #icons {
     position:fixed;
     bottom:0;
+    left: 160px;
     z-index:2;
-    padding: 40px 40px 0px 40px;
-    width:100%;
+    padding: 0px 0px 0px 0px;
+    width:80%;
     grid-template-rows: 100%;
     grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    text-align:center;
+}
+
+#icons h4 {
+    margin: 0px 0px 0px 0px;
+}
+
+#icons a {
+    text-decoration:none;
+    color: #fff8ef;
+}
+
+#icons a:visited {
+    color: #FFF8EF;
+}
+
+
+#icons img {
+    height:80px;
+    width:80px;
 }
 
 @media only screen and (min-width: 768px){
