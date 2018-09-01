@@ -15,26 +15,31 @@ $(document).ready(function(){
     //showing stuff
 
     $("#windowBlogHomeLink").click(function(){
-      $("#windowBlogPosts").css('display','none');
-      $("#windowBlogHome").show();
+      $("#windowBlogPost1").addClass("hidden");
+      $("#windowBlogPost2").addClass("hidden");
+      $("#windowBlogPost3").addClass("hidden");
+      $("#windowBlogPost4").addClass("hidden");
+      $("#windowBlogHome").removeClass("hidden")
   });
 
     $(".windowBlogLink1").click(function(){
-      $("#windowBlogPosts").css('display','block');
-      $("#windowBlogPost1").css('display','block');
-      $("#windowBlogHome").hide();
+      $("#windowBlogPost1").removeClass("hidden")
+      $("#windowBlogHome").addClass("hidden");
   });
 
     $(".windowBlogLink2").click(function(){
-      $("#windowBlogPosts").css('display','block');
-      $("#windowBlogPost2").css('display','block');
-      $("#windowBlogHome").hide();
+      $("#windowBlogPost2").removeClass("hidden")
+      $("#windowBlogHome").addClass("hidden");
   });
 
     $(".windowBlogLink3").click(function(){
-      $("#windowBlogPosts").css('display','block');
-      $("#windowBlogPost3").css('display','block');
-      $("#windowBlogHome").hide();
+     $("#windowBlogPost3").removeClass('hidden');
+     $("#windowBlogHome").addClass('hidden');
+    });
+
+    $(".windowBlogLink4").click(function(){
+      $("#windowBlogPost4").removeClass('hidden');
+      $("#windowBlogHome").addClass('hidden');
     });
 
 });
