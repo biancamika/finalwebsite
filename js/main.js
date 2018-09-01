@@ -12,7 +12,7 @@ $(document).ready(function(){
       });
     };
     fullPageInit();
-    //showing stuff
+    //showing stuff BLOG
 
     $("#windowBlogHomeLink").click(function(){
       $("#windowBlogPost1").addClass("hidden");
@@ -40,6 +40,29 @@ $(document).ready(function(){
     $(".windowBlogLink4").click(function(){
       $("#windowBlogPost4").removeClass('hidden');
       $("#windowBlogHome").addClass('hidden');
+    });
+
+    //showing stuff PORTFOLIO
+    $("#windowPortfolioHomeLink").click(function(){
+      $("#windowPortfolioArt").addClass("hidden");
+      $("#windowPortfolioDesign").addClass("hidden");
+      $("#windowPortfolioPhotography").addClass("hidden");
+      $("#windowPortfolioHome").removeClass("hidden")
+  });
+    
+    $(".windowPortfolioLink1").click(function(){
+      $("#windowPortfolioArt").removeClass('hidden');
+      $("#windowPortfolioHome").addClass('hidden');
+    });
+
+    $(".windowPortfolioLink2").click(function(){
+      $("#windowPortfolioDesign").removeClass('hidden');
+      $("#windowPortfolioHome").addClass('hidden');
+    });
+
+    $(".windowPortfolioLink3").click(function(){
+      $("#windowPortfolioPhotography").removeClass('hidden');
+      $("#windowPortfolioHome").addClass('hidden');
     });
 
 });

@@ -104,15 +104,15 @@
                 </div>
                 <div class="windowContent">
                     <div>
-                        <p> FILE EXPLORER </p>
+                        <p><a id="windowPortfolioHomeLink">FILE EXPLORER</a></p>
                         <ul>
-                            <li>Artwork</li>
-                            <li>Design</li>
-                            <li>Photography</li>
+                            <li><a class="windowPortfolioLink1">Artwork</a></li>
+                            <li><a class="windowPortfolioLink2">Design</a></li>
+                            <li><a class="windowPortfolioLink3">Photography</a></li>
                         </ul>
                     </div>
                     <div> <!--content div-->
-                       <div id="#windowPortfolioHome">
+                       <div id="windowPortfolioHome">
                            <div class="windowPortfolioTags">
                            <h2>Name</h2>
                            <h2>Date</h2>
@@ -121,23 +121,30 @@
                             <a class="windowPortfolioLink1">
                                 <i class="fas fa-palette"></i>
                                 <span>Artwork</span>
-                                <span>8/1/2018 5:30 PM</span>
+                                <span>7/25/2018 5:30 PM</span>
                                 <span>2 GB</span>
                             </a>
                             <a class="windowPortfolioLink2">
                                     <i class="fas fa-image"></i>
                                     <span>Design</span>
+                                    <span>8/30/2018 9:00 AM</span>
+                                    <span>3 GB</span>
                             </a>
                             <a class="windowPortfolioLink3">
                                     <i class="fas fa-camera"></i>
                                     <span>Photography</span>
+                                    <span>12/5/2017 12:01 PM</span>
+                                    <span>8,534 KB</span>
                             </a>
                        </div>
-                       <div id="#windowPortfolioArt">
-
+                       <div id="windowPortfolioArt" class="hidden">
+                            <p>art</p>
                        </div>
-                       <div id="#windowPortfolioDesign">
-
+                       <div id="windowPortfolioDesign" class="hidden">
+                            <p>design</p>
+                       </div>
+                       <div id="windowPortfolioPhotography" class="hidden">
+                            <p>photo</p>
                        </div>
                     </div>
                 </div>
@@ -301,9 +308,24 @@
                     </div>
                 </div>
                 <div class="windowContent">
-                <h1>HIT ME UP</h1>
-                <form action="mailto:biancamvaguilar@gmail.com" method="post" enctype="text/plain">
-                </form>
+                    <div>
+                        <h1>HIT ME UP</h1>
+                    </div>
+                    <div>
+                        <form action="mailto:biancamvaguilar@gmail.com" method="post" enctype="text/plain">
+                            <span>Name:</span>
+                            <input type="text" name="name">
+                            <br>
+                            <span>E-mail:</span>
+                            <input type="text" name="mail">
+                            <br>
+                            <span>Subject:</span>
+                            <input type="text" name="mail">
+                            <p>Content:</p>
+                            <input type="text" name="comment" size="100">
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
